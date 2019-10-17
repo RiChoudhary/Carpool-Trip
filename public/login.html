@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Roadtrip</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/icomoon/icomoon.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-offset="58" data-target="#navbar-main">
+
+
+
+<ul class="nav nav-tabs">
+  <li class= "active"> <a data-toggle="tab" href="#logon">Login</a></li>
+  <li><a data-toggle="tab" href="#signup">Signup</a></li>
+</ul>
+
+<div class="tab-content">
+<div id = "logon"  class="tab-pane fade in active">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+				Login:
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<form role="form" action ="/checkLogin" method="post">
+				<div class="form-group">
+					 
+					<label for="exampleInputEmail1">
+						Email address
+					</label>
+					<input type="email" name="inputemail" class="form-control" id="exampleInputEmail1" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputPassword1">
+						Password
+					</label>
+					<input type="password" name="inputpassword" class="form-control" id="exampleInputPassword1" />
+				</div>
+				
+				<button type="submit" class="btn btn-primary">
+					Submit
+				</button>
+			</form>
+		</div>
+		<!--column end-->
+	</div>
+		<!--row end-->
+</div>
+		<!--logon end-->
+       
+
+<div id="signup"  class="tab-pane fade">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Sign up
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+            <form role="form" action="/postData" name="myForm" method="post">
+                <!--first name-->
+                <div class="form-group">
+
+                    <label for="firstName">
+                        First Name
+                    </label>
+                    <input type="text" name="first" class="form-control" id="firstName" required/>
+                </div>
+
+                <!--last name-->
+                <div class="form-group">
+
+                    <label for="lastname">
+                        Last Name
+                    </label>
+                    <input type="text" name="last" class="form-control" id="lastName" required/>
+                </div>
+
+                <!--email-->
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                        Email Address
+                    </label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+
+                <!--telephone-->
+                <div class="form-group">
+
+                    <label for="telephone">
+                        Telephone
+                    </label>
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </div>
+                
+                <!--username-->
+                <div class="form-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+                    <input type="text" name="username" class="form-control" id="username" required/>
+                </div>
+
+                <!--email-->
+                <div class="form-group">
+
+                    <label for="exampleInputPassword1">
+                        Password
+                    </label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </form>
+		</div>
+		<!--column end-->
+	</div>
+	<!--row end-->
+</div>
+	<!--sign on end-->
+</div>
+<!-- end tab content-->
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/php-mail-form/validate.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
